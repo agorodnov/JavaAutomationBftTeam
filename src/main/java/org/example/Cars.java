@@ -25,7 +25,7 @@ public class Cars {
         } else if (years <= 2010) {
             System.out.println(model + " : Сигналит тихо");
         } else {
-            System.out.println(model + " : Электромобиль не имеет сигнала");
+            System.out.println(model + " : Электромобиль не имеет сигнала ");
         }
     }
 }
