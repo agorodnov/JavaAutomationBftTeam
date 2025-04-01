@@ -12,9 +12,14 @@ public class Main {
         System.out.println(пока);
         String гипербола = arrayOne[2];
         System.out.println(гипербола);
-        StringBuilder stbuild = new StringBuilder(arrayOne[1]);
-        stbuild.insert(1,' ');
-        stbuild.insert(3,' ');
-        System.out.println(stbuild);
+        for (String cлово : arrayOne) {
+            // Проверка если вторая буква в Верхнем регистре 'О'
+            if (cлово.length() > 3   && cлово.charAt(1) == 'О') {
+                StringBuilder stbuild = new StringBuilder(cлово);
+                stbuild.insert(1, ' ');
+                stbuild.insert(3, ' ');
+                System.out.println("Слово с нужной второй буквой О в верхнем регистре: " + stbuild);
+            }
+        }
     }
 }
