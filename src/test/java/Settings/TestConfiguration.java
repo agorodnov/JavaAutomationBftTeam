@@ -15,6 +15,7 @@ public class TestConfiguration {
     @BeforeEach
     void setDriver(){
         setlocalDriver();
+        Selenide.open("https://ru.m.wikipedia.org/wiki/");
     }
     @AfterEach
     void tearDown(){
