@@ -1,0 +1,5 @@
+PageObject\WikiCardPage.class
+Settings\TestConfiguration.class
+PageElement\TextField.class
+PageElement\Input.class
+test\UITest.class
