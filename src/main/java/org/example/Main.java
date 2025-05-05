@@ -1,17 +1,14 @@
 package org.example;
 
-    public class Main {
-        public static void main(String[] args) {
-            String[] arrayOne = new String[3];
-            arrayOne[0] = "привет";
-            arrayOne[1] = "ПОКА";
-            arrayOne[2] = "гипербола";
-            int randomIndex = RandomIndex();
-            String array = arrayOne[randomIndex];
-            System.out.println("Рандомное число: " + randomIndex + " Слово из массива: " + array);
-        }
-        //Метод для генерации случайного числа от 0 до 2//
-        public static int RandomIndex() {
-            return (int) (Math.random() * 3);
-        }
+public class Main {
+    public static void main(String[] args) {
+        BoxCollection boxCollection = new BoxCollection();
+        boxCollection.addBox(new Box(25, 10, 15));
+        boxCollection.addBox(new Box(40, 10, 30));
+        boxCollection.addBox(new Box(30, 5, 10));
+        boxCollection.addBox(new Box(31, 20, 40));
+
+        boxCollection.filterLargeBoxes();
+        boxCollection.displayBoxes();
     }
+}

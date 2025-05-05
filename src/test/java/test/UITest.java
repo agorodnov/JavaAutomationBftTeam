@@ -23,4 +23,10 @@ public class UITest extends TestConfiguration {
         .verifyWikipediaTextIsPresent();
         sleep(6000);
     }
+
+    @Test
+    @DisplayName("Подсчет размера коробки (Box)")
+    @Owner("Городнов Александр")
+    @Severity(MINOR)
+
 }
